@@ -6,7 +6,8 @@ export type Project = {
   type: string;     // Group Project, Site Visit, ...
   period: string;
   summary: string;
-  points: string[]; // string[] = a list of text
+  points: string[]; // a list of text
+  pdf?: string;     // path to the PDF in public/, e.g. "/projects/abc.pdf" ("" = none yet)
 };
 
 // 2) DATA: a list of Project
@@ -22,6 +23,7 @@ export const projects: Project[] = [
       "Drafted the BOQ in standard measurement format",
       "Reviewed contract conditions, preliminaries and measurement rules",
     ],
+    pdf: "",
   },
   {
     slug: "hospital-electrical-systems",
@@ -34,6 +36,7 @@ export const projects: Project[] = [
       "Built a foundation in M&E systems for QS cost estimation",
       "Learned how M&E coordination affects cost and schedule",
     ],
+    pdf: "",
   },
   {
     slug: "nkve-nse-lane-widening",
@@ -46,6 +49,7 @@ export const projects: Project[] = [
       "Documented challenges in budget control and material logistics",
       "Explored how progress claims are managed on highway projects",
     ],
+    pdf: "",
   },
   {
     slug: "sewage-treatment-plant",
@@ -58,5 +62,6 @@ export const projects: Project[] = [
       "Observed daily workflow and equipment management",
       "Related maintenance scope to cost reporting",
     ],
+    pdf: "",
   },
 ];
